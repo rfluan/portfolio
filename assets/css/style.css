@@ -91,7 +91,9 @@ a:hover {
       flex-direction: column;
       text-align: center;
       padding-bottom: 1rem;
+      
   }
+
   .mobile-menu .nav-item {
       display: block;
       padding-top: 1.2rem;
