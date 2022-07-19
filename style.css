@@ -11,6 +11,7 @@
 
 body {
     background-color: lightblue;
+    overflow-x: hidden
 }
 
 a {
@@ -61,10 +62,11 @@ nav {
     transition: 0.3s;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 800px) {
     body {
         overflow-x: hidden;
     }
+
     .nav-list {
         position: absolute;
         top: 8vh;
