@@ -11,7 +11,8 @@
 
 body {
     background-color: lightblue;
-    overflow-x: hidden
+    overflow-x: hidden;
+    width: 100vw;
 }
 
 a {
@@ -62,7 +63,7 @@ nav {
     transition: 0.3s;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 920px) {
     body {
         overflow-x: hidden;
     }
