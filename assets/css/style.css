@@ -6,6 +6,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  background-color: lightgray;
+}
+
 a {
   color: #fff;
   text-decoration: none;
@@ -81,25 +85,27 @@ a:hover {
       cursor: pointer;
   }
 
-  .ul-mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-    text-decoration: none;
+  .mobile-menu {
+    
   }
 
-  .mobile-menu {
-    position: absolute;
+  .mobile-menu ul {
     top: 8vh;
-    right: 50;
     width: 50vw;
     height: 50vh;
-    background: #23232e;
     transform: translateX(100%);
+    list-style: none; 
+    align-items: center;
+    background-color: blue;
+  }
+
+  .mobile-menu li {
+    justify-items: center;
+    text-align: center;
+    background-color: red;
   }
 
   .open {
-      display: block;
+    display: block;
   }
 }
