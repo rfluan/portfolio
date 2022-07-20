@@ -30,6 +30,10 @@ a:hover {
   color: #fff;
 }
 
+li {
+  list-style: none;
+}
+
 .nav-bar {
   box-shadow: 0px 3px 10px #464646;
   display: flex;
@@ -42,7 +46,6 @@ a:hover {
 .nav-list {
   display: flex;
   list-style: none;
-  align-items: center;
 }
 
 .nav-list li {
@@ -52,8 +55,6 @@ a:hover {
 
 .nav-list ul {
   display: flex;
-  justify-content: center;
-  list-style: none;
 }
 
 .nav-link {
@@ -71,7 +72,7 @@ a:hover {
   display: none;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 800px) {
   .nav-item {
       display: none;
   }
@@ -85,24 +86,27 @@ a:hover {
       cursor: pointer;
   }
 
-  .mobile-menu {
-    
-  }
-
   .mobile-menu ul {
-    top: 8vh;
-    width: 50vw;
-    height: 50vh;
-    transform: translateX(100%);
-    list-style: none; 
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    background-color: blue;
+    justify-content: space-around;
+    top: 8vh;
+    width: 40vw;
+    height: 35vh;
+    transform: translateX(150%);
+    background-color: #23232e;
   }
 
-  .mobile-menu li {
-    justify-items: center;
-    text-align: center;
-    background-color: red;
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 
   .open {
