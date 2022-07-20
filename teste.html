@@ -65,7 +65,7 @@ main {
   transition: 0.3s;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 750px) {
   body {
     overflow-x: hidden;
   }
@@ -73,14 +73,14 @@ main {
     position: absolute;
     top: 8vh;
     right: 0;
-    width: 50vw;
-    height: 92vh;
+    width: 100vw;
+    height: 50vh;
     background: #23232e;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     transform: translateY(-150%);
-    transition: transform 0.7s ease-in;
+    transition: transform 0.5s ease-in;
   }
   .nav-list li {
     margin-left: 0;
@@ -98,11 +98,11 @@ main {
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
@@ -122,17 +122,17 @@ main {
 <body>
     <header>
         <nav>
-          <a class="logo" href="/">Tiger Codes</a>
+          <a class="logo" href="/">&lsaquo;LF/&rsaquo;</a>
           <div class="mobile-menu">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
           </div>
           <ul class="nav-list">
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </nav>
     </header>
@@ -152,7 +152,7 @@ main {
       link.style.animation
         ? (link.style.animation = "")
         : (link.style.animation = `navLinkFade 0.5s ease forwards ${
-            index / 7 + 0.3
+            index / 7 + 0.6
           }s`);
     });
   }
