@@ -76,6 +76,7 @@ main {
   }
 
   nav {
+    margin: 10px;
     position: absolute;
     right: 0;
     border-radius: 50%;
@@ -85,6 +86,7 @@ main {
 
   .nav-list {
     position: absolute;
+    margin: -10px;
     top: 0px;
     right: 0;
     width: 100vw;
@@ -101,7 +103,7 @@ main {
     opacity: 0;
   }
   .mobile-menu {
-    display: block;  
+    display: block; 
   }
 }
 
