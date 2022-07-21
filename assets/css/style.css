@@ -104,8 +104,8 @@ section.home {
   }
 
   .nav-list {
-    position: absolute;
-    margin: -10px;
+    position: fixed;
+    margin: 0px;
     top: 0px;
     right: 0;
     width: 100vw;
