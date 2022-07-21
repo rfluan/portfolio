@@ -58,16 +58,16 @@ main {
 }
 
 .mobile-menu div {
-  width: 32px;
+  width: 20px;
   height: 2px;
   background: #fff;
-  margin: 8px;
+  margin: 6px;
   transition: 0.3s;
 }
 
 @media (max-width: 750px) {
 
-  main {
+  section.home {
     height: 100vh;
   }
 
@@ -79,8 +79,8 @@ main {
     position: absolute;
     right: 0;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
 
   .nav-list {
@@ -121,7 +121,7 @@ main {
 }
 
 .mobile-menu.active .line1 {
-  transform: rotate(-45deg) translate(-8px, 8px);
+  transform: rotate(-45deg) translate(-5px, 5px);
 }
 
 .mobile-menu.active .line2 {
@@ -133,7 +133,7 @@ main {
 }
 
 section.home {
-  height: 92vh;
+  height: 100vh;
   background-image: url('../img/wallpaper\ fundo\ site.jpg');
   background-size: cover;
   background-position: center center;
