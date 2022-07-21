@@ -3,13 +3,14 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Roboto', sans-serif;
+  
 }
 
 a {
   color: #fff;
   text-decoration: none;
   transition: 0.3s;
+  font-size: 1em;
 }
 
 a:hover {
@@ -18,7 +19,7 @@ a:hover {
 
 .logo {
   font-size: 24px;
-  text-transform: uppercase;
+  font-weight: bolder;
   letter-spacing: 4px;
 }
 
@@ -26,15 +27,15 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
   background: #23232e;
   height: 8vh;
 }
 
 main {
-  background: url("bg.jpg") no-repeat center center;
-  background-size: cover;
   height: 92vh;
+  background-color: gray;
 }
 
 .nav-list {
@@ -65,13 +66,26 @@ main {
     overflow-x: hidden;
   }
 
+  main {
+    height: 100vh;
+    background-color: lightblue;
+  }
+
   .logo {
     display: none;
   }
 
+  nav {
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+
   .nav-list {
     position: absolute;
-    top: 8vh;
+    top: 0px;
     right: 0;
     width: 100vw;
     height: 50vh;
@@ -87,7 +101,7 @@ main {
     opacity: 0;
   }
   .mobile-menu {
-    display: block;
+    display: block;  
   }
 }
 
