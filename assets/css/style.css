@@ -6,10 +6,6 @@
   font-family: 'Roboto', sans-serif;
 }
 
-body {
-  background-color: lightgray;
-}
-
 a {
   color: #fff;
   text-decoration: none;
@@ -21,31 +17,29 @@ a:hover {
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
 
-.logo h1 {
-  color: #fff;
-}
-
-li {
-  list-style: none;
-}
-
-.nav-bar {
-  box-shadow: 0px 3px 10px #464646;
+nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   background: #23232e;
   height: 8vh;
 }
 
+main {
+  background: url("bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 92vh;
+}
+
 .nav-list {
-  display: flex;
   list-style: none;
+  display: flex;
 }
 
 .nav-list li {
@@ -53,52 +47,73 @@ li {
   margin-left: 32px;
 }
 
-.nav-list ul {
-  display: flex;
-}
-
-.nav-link {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #fff;
-  font-weight: 500;
-}
-
-.mobile-menu-icon {
-  display: none;
-}
-
 .mobile-menu {
   display: none;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 800px) {
-  .nav-item {
-      display: none;
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 750px) {
+  body {
+    overflow-x: hidden;
   }
 
-  .mobile-menu-icon {
-      display: block;
-  }
-  .mobile-menu-icon button {
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
+  .logo {
+    display: none;
   }
 
-  .mobile-menu ul {
-    display: flex;
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 100vw;
+    height: 50vh;
+    background: #23232e;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    top: 8vh;
-    width: 40vw;
-    height: 35vh;
-    transform: translateX(150%);
-    background-color: #23232e;
+    transform: translateY(-150%);
+    transition: transform 0.5s ease-in;
   }
-
-  .open {
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
     display: block;
   }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
 }
