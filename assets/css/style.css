@@ -38,10 +38,6 @@ nav {
   height: 8vh;
 }
 
-main {
-  height: 100vh;
-}
-
 .nav-list {
   list-style: none;
   display: flex;
@@ -64,6 +60,29 @@ main {
   margin: 6px;
   transition: 0.3s;
 }
+
+section.home {
+  height: 92vh;
+  background-image: url('../img/wallpaper\ fundo\ site.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.about {
+  height: 100vh;
+  background-color: blueviolet;
+}
+
+.projects {
+  height: 100vh;
+  background-color: blue;
+}
+
+.contact {
+  background-color: violet;
+  height: 100vh;
+}
+
 
 @media (max-width: 750px) {
 
@@ -132,25 +151,4 @@ main {
 
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
-}
-
-section.home {
-  height: 100vh;
-  background-image: url('../img/wallpaper\ fundo\ site.jpg');
-  background-size: cover;
-  background-position: center center;
-}
-
-.about {
-  height: 100vh;
-  background-color: blueviolet;
-}
-
-.projects {
-  height: 100vh;
-  background-color: blue;
-}
-
-.contact {
-  background-color: violet;
 }
