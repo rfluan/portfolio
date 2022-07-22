@@ -33,7 +33,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
+  text-transform: lowercase;
   background: #23232e;
   height: 8vh;
 }
@@ -63,9 +63,7 @@ nav {
 
 section.home {
   height: 92vh;
-  background-image: url('../img/wallpaper\ fundo\ site.jpg');
-  background-size: cover;
-  background-position: center center;
+  background-color: #23232e;
 }
 
 .about {
