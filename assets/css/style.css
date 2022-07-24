@@ -113,7 +113,7 @@ aside.text-home {
   color: var(--color-orange);
   font-family: var(--text-c);
   font-weight: bold;
-  font-size: 12em;
+  font-size: max(60px, 5vw);
   letter-spacing: 15px;
   line-height: 100px;
 }
@@ -122,7 +122,7 @@ aside.text-home {
   color: white;
   font-family: var(--text-u);
   font-weight: 300;
-  font-size: 4em;
+  font-size: max(50px, 2vw);
 }
 
 .about {
@@ -139,7 +139,6 @@ aside.text-home {
 
 
 @media (max-width: 820px) {
-
   section.home {
     height: 100vh;
   }
@@ -183,13 +182,25 @@ aside.text-home {
     display: block; 
   }
 
+  aside.text-home {
+    margin: auto;
+  }
+  .hi {
+    font-size: max(25px, 2vw);
+    transform: rotate(-10deg) translate(0px, -40px);
+  }
+
   .home h2 {
     color: var(--color-orange);
     font-family: var(--text-c);
     font-weight: bold;
-    font-size: 2em;
+    font-size: 5em;
     letter-spacing: 10px;
     line-height: 50px;
+  }
+
+  .front {
+    font-size: max(30px, 3vw);
   }
 }
 
