@@ -205,7 +205,7 @@ aside.text-home {
   }
 
   .front {
-    font-size: max(30px, 3vw);
+    font-size: max(20px, 2vw);
     text-align: left;
   }
 }
