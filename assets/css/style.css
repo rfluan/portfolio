@@ -139,8 +139,13 @@ aside.text-home {
 
 
 @media (max-width: 820px) {
+  body {
+    font-size: 62.5%;
+  }
+
   section.home {
     height: 100vh;
+    width: 100vw;
   }
 
   .logo {
@@ -183,24 +188,30 @@ aside.text-home {
   }
 
   aside.text-home {
-    margin: auto;
+    width: 70vw;
   }
+
   .hi {
+    box-sizing: border-box;
     font-size: max(25px, 2vw);
-    transform: rotate(-10deg) translate(0px, -40px);
+    transform: rotate(0deg) translate(0px, -10px);
+    text-align: left;
   }
 
   .home h2 {
+    box-sizing: border-box;
     color: var(--color-orange);
     font-family: var(--text-c);
     font-weight: bold;
-    font-size: 5em;
+    font-size: max(50px, 5vw);
     letter-spacing: 10px;
-    line-height: 50px;
+    line-height: 45px;
+    text-align: left;
   }
 
   .front {
     font-size: max(30px, 3vw);
+    text-align: left;
   }
 }
 
