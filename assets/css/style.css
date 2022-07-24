@@ -21,6 +21,7 @@
 
 body {
   background-color: var(--bg-color);
+  font-size: 62.5%;
 }
 
 a {
@@ -30,7 +31,7 @@ a {
   font-weight: 300;
   letter-spacing: 5px;
   transition: 0.3s;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 a:hover {
@@ -39,7 +40,7 @@ a:hover {
 
 .logo {
   text-transform: lowercase;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 500;
   letter-spacing: 4px;
   color: var(--color-orange);
@@ -86,32 +87,42 @@ section.home {
 aside.svg-lap {
   display: flex;
   background-color: var(--bg-color-dark);
-  max-width: 500px;
+  max-width: 30vw;
 }
 
 aside img {
-  max-width: 500px;
+  max-width: 30vw;
+}
+
+aside.text-home {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  margin: auto;
 }
 
 .hi {
   font-family: var(--text-s);
   color: white;
-  font-size: 32px;
+  font-size: 3em;
+  transform: rotate(-10deg) translate(0px, -90px);
 }
 
 .home h2 {
   color: var(--color-orange);
   font-family: var(--text-c);
   font-weight: bold;
-  font-size: 96px;
-  letter-spacing: 8px;
+  font-size: 12em;
+  letter-spacing: 15px;
+  line-height: 100px;
 }
 
 .front {
   color: white;
   font-family: var(--text-u);
   font-weight: 300;
-  font-size: 48px;
+  font-size: 4em;
 }
 
 .about {
@@ -127,13 +138,17 @@ aside img {
 }
 
 
-@media (max-width: 750px) {
+@media (max-width: 820px) {
 
   section.home {
     height: 100vh;
   }
 
   .logo {
+    display: none;
+  }
+
+  aside.svg-lap{
     display: none;
   }
 
@@ -166,6 +181,15 @@ aside img {
   }
   .mobile-menu {
     display: block; 
+  }
+
+  .home h2 {
+    color: var(--color-orange);
+    font-family: var(--text-c);
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 10px;
+    line-height: 50px;
   }
 }
 
