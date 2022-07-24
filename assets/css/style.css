@@ -106,7 +106,7 @@ aside.text-home {
   font-family: var(--text-s);
   color: white;
   font-size: 3em;
-  transform: rotate(-10deg) translate(0px, -90px);
+  
 }
 
 .home h2 {
@@ -139,9 +139,6 @@ aside.text-home {
 
 
 @media (max-width: 820px) {
-  body {
-    font-size: 62.5%;
-  }
 
   section.home {
     height: 100vh;
@@ -192,19 +189,17 @@ aside.text-home {
   }
 
   .hi {
-    box-sizing: border-box;
-    font-size: max(25px, 2vw);
-    transform: rotate(0deg) translate(0px, -10px);
+    box-sizing: content-box;
+    font-size: max(20px, 2vw);
     text-align: left;
   }
 
   .home h2 {
-    box-sizing: border-box;
     color: var(--color-orange);
     font-family: var(--text-c);
     font-weight: bold;
-    font-size: max(50px, 5vw);
-    letter-spacing: 10px;
+    font-size: max(35px, 4vw);
+    letter-spacing: 8px;
     line-height: 45px;
     text-align: left;
   }
