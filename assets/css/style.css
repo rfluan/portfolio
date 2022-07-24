@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100&family=Satisfy&family=Ubuntu:wght@300;400;500&display=swap');
 
 * {
   margin: 0px;
@@ -10,9 +10,25 @@
   height: 0;
 }
 
+:root {
+  --text-u:'Ubuntu', sans-serif;
+  --text-s:'Satisfy';
+  --text-c:'Catamaran', sans-serif;
+  --bg-color: #363362;
+  --bg-color-dark: #1E1C37;
+  --color-orange: #E06722;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
 a {
   color: #fff;
   text-decoration: none;
+  font-family: var(--text-u);
+  font-weight: 300;
+  letter-spacing: 5px;
   transition: 0.3s;
   font-size: 1em;
 }
@@ -23,9 +39,10 @@ a:hover {
 
 .logo {
   text-transform: lowercase;
-  font-size: 24px;
-  font-weight: bolder;
+  font-size: 2em;
+  font-weight: 500;
   letter-spacing: 4px;
+  color: var(--color-orange);
 }
 
 nav {
@@ -34,8 +51,8 @@ nav {
   align-items: center;
   font-family: 'Roboto', sans-serif;
   text-transform: lowercase;
-  background: #23232e;
-  height: 8vh;
+  background: rgba(0, 0, 0, 0.2);
+  height: 10vh;
 }
 
 .nav-list {
@@ -62,22 +79,50 @@ nav {
 }
 
 section.home {
-  height: 92vh;
-  background-color: #23232e;
+  display: flex;
+  height: 90vh;
+}
+
+aside.svg-lap {
+  display: flex;
+  background-color: var(--bg-color-dark);
+  max-width: 500px;
+}
+
+aside img {
+  max-width: 500px;
+}
+
+.hi {
+  font-family: var(--text-s);
+  color: white;
+  font-size: 32px;
+}
+
+.home h2 {
+  color: var(--color-orange);
+  font-family: var(--text-c);
+  font-weight: bold;
+  font-size: 96px;
+  letter-spacing: 8px;
+}
+
+.front {
+  color: white;
+  font-family: var(--text-u);
+  font-weight: 300;
+  font-size: 48px;
 }
 
 .about {
   height: 100vh;
-  background-color: blueviolet;
 }
 
 .projects {
   height: 100vh;
-  background-color: blue;
 }
 
 .contact {
-  background-color: violet;
   height: 100vh;
 }
 
