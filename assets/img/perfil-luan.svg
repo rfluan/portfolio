@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64 Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="3.2cm" height="3.2cm" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+viewBox="0 0 3200 3200"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+    <clipPath id="id0">
+     <path d="M327.4 32.6l2400 0c165,0 300,135 300,300l0 2400c0,165 -135,300 -300,300l-2400 0c-165,0 -300,-135 -300,-300l0 -2400c0,-165 135,-300 300,-300z"/>
+    </clipPath>
+     <clipPath id="id1">
+      <path d="M327.4 32.6l2400 0c165,0 300,135 300,300l0 2400c0,165 -135,300 -300,300l-2400 0c-165,0 -300,-135 -300,-300l0 -2400c0,-165 135,-300 300,-300z"/>
+     </clipPath>
+     <clipPath id="id2">
+      <path d="M327.4 32.6l2400 0c165,0 300,135 300,300l0 2400c0,165 -135,300 -300,300l-2400 0c-165,0 -300,-135 -300,-300l0 -2400c0,-165 135,-300 300,-300z"/>
+     </clipPath>
+ </defs>
+ <g id="Camada_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_1989303189008">
+   <rect fill="none" stroke="#E06722" stroke-width="20" stroke-miterlimit="22.9256" x="214.34" y="219.54" width="2953.06" height="2953.06" rx="392.79" ry="392.79"/>
+   <g>
+   </g>
+   <g clip-path="url(#id0)">
+    <g id="_1989303190112">
+    </g>
+    <g clip-path="url(#id1)">
+     <image x="27.4" y="-466.71" width="3000" height="3998.62" xlink:href="perfil-luan_Images\perfil-luan_ImgID1.png"/>
+    </g>
+    <g clip-path="url(#id2)">
+    </g>
+   </g>
+   <path fill="none" d="M327.4 32.6l2400 0c165,0 300,135 300,300l0 2400c0,165 -135,300 -300,300l-2400 0c-165,0 -300,-135 -300,-300l0 -2400c0,-165 135,-300 300,-300z"/>
+  </g>
+ </g>
+</svg>
