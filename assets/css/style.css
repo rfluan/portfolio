@@ -246,6 +246,10 @@ div.box {
     transform: translateY(-150%);
     transition: transform 0.5s ease-in;
   }
+
+  nav {
+    z-index: 9;
+  }
   .nav-list li {
     margin-left: 0;
     opacity: 0;
