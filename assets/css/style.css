@@ -14,9 +14,13 @@
   --text-u:'Ubuntu', sans-serif;
   --text-s:'Satisfy';
   --text-c:'Catamaran', sans-serif;
+
   --bg-color: #363362;
   --bg-color-dark: #1E1C37;
+  --bg-color-2: #29272A;
+  --bg-color-2-dark: #291731;
   --color-orange: #E06722;
+  --color-orange-light: #ff7f34; 
 }
 
 body {
@@ -134,18 +138,24 @@ aside.text-home {
   font-family: var(--text-c);
   font-weight: bold;
   font-size: max(60px, 6vw);
-  letter-spacing: 15px;
-  line-height: 100px;
+  letter-spacing: 10px;
+  line-height: 70px;
+  transition: 0.3s;
+}
+
+h2:hover {
+  color: var(--color-orange-light);
 }
 
 .front {
   color: white;
   font-family: var(--text-u);
   font-weight: 300;
-  font-size: max(50px, 2vw);
+  font-size: max(40px, 2vw);
 }
 
 .about {
+  background-color: var(--bg-color-2);
   height: 100vh;
   display: flex;
   text-align: center;
