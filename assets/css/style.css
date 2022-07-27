@@ -127,7 +127,7 @@ aside.text-home {
   margin: auto;
 }
 
-.hi {
+.text-hi {
   font-family: var(--text-s);
   color: white;
   font-size: 3em;
@@ -147,7 +147,7 @@ h2:hover {
   color: var(--color-orange-light);
 }
 
-.front {
+.text-frontend {
   color: white;
   font-family: var(--text-u);
   font-weight: 300;
@@ -223,6 +223,10 @@ div.box {
     display: none;
   }
 
+  nav {
+    z-index: 9;
+  }
+
   .nav2 {
     margin: 10px;
     position: fixed;
@@ -247,9 +251,6 @@ div.box {
     transition: transform 0.5s ease-in;
   }
 
-  nav {
-    z-index: 9;
-  }
   .nav-list li {
     margin-left: 0;
     opacity: 0;
