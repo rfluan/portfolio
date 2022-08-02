@@ -211,10 +211,6 @@ div.box {
 
 @media (max-width: 820px) {
 
-  section.home {
-    height: 100vh;
-  }
-
   .logo {
     display: none;
   }
@@ -257,6 +253,10 @@ div.box {
   }
   .mobile-menu {
     display: block; 
+  }
+
+  section.home {
+    height: 100vh;
   }
 
   aside.text-home {
