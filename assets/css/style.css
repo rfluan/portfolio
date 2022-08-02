@@ -25,18 +25,19 @@
 
 body {
   background-color: var(--bg-color);
+  font-family: var(--text-u);
   font-size: 62.5%;
 }
 
 p {
   font-weight: 300;
 }
-
 a {
   color: #fff;
   text-decoration: none;
-  font-family: var(--text-u);
-  font-weight: 300;
+}
+
+header a {
   letter-spacing: 5px;
   transition: 0.3s;
   font-size: 1.5em;
@@ -64,7 +65,7 @@ header {
 .logo a {
   text-transform: lowercase;
   font-size: 3em;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 4px;
   color: var(--color-orange);
 }
@@ -202,8 +203,105 @@ div.box {
 
 .projects {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  background-color: gray;
+  padding: 40px 0;
+}
+
+.slide-content {
+  margin: 0 40px;
+}
+
+.card {
+  width: 320px;
+  border-radius: 25px;
+  background-color: #fff;
+}
+
+.image-content, .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-orange);
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: var(--color-orange);
+}
+
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+
+.name {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.description {
+  font-size: 1.5em;
+}
+
+.button {
+  border: none;
+  font-size: 1.5em;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: var(--color-orange);
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: 0.3s ease
+}
+
+.button:hover {
+  background-color: var(--color-orange-light);
+}
 .contact {
   height: 100vh;
 }
