@@ -139,7 +139,7 @@ aside.text-home {
   font-weight: bold;
   font-size: max(60px, 6vw);
   letter-spacing: 10px;
-  line-height: 70px;
+  line-height: 100px;
   transition: 0.3s;
 }
 
@@ -151,7 +151,7 @@ h2:hover {
   color: white;
   font-family: var(--text-u);
   font-weight: 300;
-  font-size: max(40px, 2vw);
+  font-size: 4.5em;
 }
 
 .about {
@@ -263,8 +263,7 @@ div.box {
     width: 70vw;
   }
 
-  .hi {
-    box-sizing: content-box;
+  .text-hi {
     font-size: max(20px, 2vw);
     text-align: left;
   }
@@ -279,7 +278,7 @@ div.box {
     text-align: left;
   }
 
-  .front {
+  .text-frontend {
     font-size: max(20px, 2vw);
     text-align: left;
   }
