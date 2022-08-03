@@ -80,6 +80,7 @@ header {
   height: 10vh;
   min-width: 70vw;
   right: 0;
+  z-index: 1;
 }
 
 .nav-list {
