@@ -221,7 +221,6 @@ div.box {
 }
 
 .card {
-  width: 320px;
   border-radius: 25px;
   background-color: #fff;
 }
@@ -282,6 +281,7 @@ div.box {
 .name {
   font-size: 2em;
   font-weight: 400;
+  margin-bottom: 14px;
 }
 
 .description {

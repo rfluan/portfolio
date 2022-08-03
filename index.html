@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfólio | Luan Ferreira</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <header>
@@ -54,10 +57,10 @@
     </section>
 
     <section class="projects">
-      <div class="slide-container">
+      <div class="slide-container swiper">
         <div class="slide-content">
-          <div class="card-wrapper">
-            <div class="card">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
               <div class="image-content">
                 <span class="overlay"></span>
                 <div class="card-image">
@@ -74,6 +77,10 @@
             </div>
           </div>
         </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
 
@@ -86,7 +93,11 @@
   <footer>
     <p>Feito com ❤ por Luan Ferreira</p>
   </footer>
-
-  <script src="./assets/js/mobile-navbar.js"></script>
+  <!-- Swiper JS -->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <!-- Mobile Navbar -->
+  <script src="assets/js/mobile-navbar.js"></script>
+  <!-- Script JS -->
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
