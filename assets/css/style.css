@@ -54,12 +54,12 @@ header {
 
 /* transition navbar */
 .nav-area{
-  transition: all 3s;;
+  transition: 0.4s;
 }
 
 .nav-area-hidden {
   transform: translateY(-10vh);
-  transition: all 5s;
+  transition: 0.4s;
 }
 .logo {
   display: flex;
