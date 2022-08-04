@@ -52,6 +52,15 @@ header {
   flex-direction: column;
 }
 
+/* transition navbar */
+.nav-area{
+  transition: all 3s;;
+}
+
+.nav-area-hidden {
+  transform: translateY(-10vh);
+  transition: all 5s;
+}
 .logo {
   display: flex;
   position: fixed;

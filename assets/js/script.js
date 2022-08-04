@@ -1,3 +1,16 @@
+const nav = document.querySelector(".nav-area");
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  if (lastScrollY < window.scrollY) {
+    nav.classList.add("nav-area-hidden");
+  } else {
+    nav.classList.remove("nav-area-hidden");
+  }
+
+  lastScrollY = window.scrollY;
+});
+
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
     spaceBetween: 25,
