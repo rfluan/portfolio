@@ -55,6 +55,38 @@ header {
   display: flex;
 }
 
+/* Button Para o Topo */
+
+#btnTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--bg-color-2-dark);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  padding: 5px;
+  display: inline-block;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+/* -----------BTN TOP------------ */
+
 .logo {
   display: flex;
   min-width: 30vw;
@@ -348,6 +380,10 @@ div.box {
 
 
 @media screen and (max-width: 768px) {
+
+  #btnTop {
+    display: none;
+  }
 
   .logo {
     display: none;
