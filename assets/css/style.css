@@ -129,6 +129,13 @@ header {
   margin-left: 32px;
 }
 
+a#liHome {
+  padding: 10px;
+  background-color: var(--bg-color-dark);
+  color: var(--color-orange-light);
+  border-radius: 15px;
+}
+
 .mobile-menu {
   display: none;
   cursor: pointer;
@@ -393,6 +400,11 @@ div.box {
     display: none;
   }
 
+  a#liHome {
+    background: transparent;
+    color: white
+  }
+
   .nav2 {
     margin: 10px;
     position: fixed;
@@ -401,6 +413,7 @@ div.box {
     min-width: 50px;
     height: 50px;
     z-index: 9;
+    box-shadow: none;
   }
 
   .nav-list {
