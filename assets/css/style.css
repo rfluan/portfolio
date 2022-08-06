@@ -389,7 +389,7 @@ div.box {
 @media screen and (max-width: 768px) {
 
   #btnTop {
-    display: none;
+    display: flex;
   }
 
   .logo {
@@ -414,6 +414,7 @@ div.box {
     height: 50px;
     z-index: 9;
     box-shadow: none;
+    background: transparent;
   }
 
   .nav-list {
@@ -437,6 +438,7 @@ div.box {
   }
   .mobile-menu {
     display: block; 
+    
   }
 
   section.home {
