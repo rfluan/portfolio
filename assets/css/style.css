@@ -23,6 +23,10 @@
   --color-orange-light: #ff7f34; 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bg-color);
   font-family: var(--text-u);
@@ -49,27 +53,17 @@ a:hover {
 
 header {
   display: flex;
-  flex-direction: column;
 }
 
-/* transition navbar */
-.nav-area{
-  transition: 0.4s;
-}
-
-.nav-area-hidden {
-  transform: translateY(-10vh);
-  transition: 0.4s;
-}
 .logo {
   display: flex;
-  position: fixed;
   min-width: 30vw;
   height: 10vh;
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--bg-color-dark);
   align-items: center;
   justify-content: space-around;
   z-index: 9;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .logo a {
@@ -81,16 +75,16 @@ header {
 }
 
 .nav2 {
-  position: fixed;
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-transform: lowercase;
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--bg-color);
   height: 10vh;
   min-width: 70vw;
   right: 0;
   z-index: 9;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .nav-list {
@@ -118,7 +112,7 @@ header {
 
 section.home {
   display: flex;
-  height: 100vh;
+  height: 90vh;
 }
 
 aside.svg-lap {
@@ -347,10 +341,8 @@ div.box {
   background-color: var(--color-orange);
 }
 
-
-
-
 .contact {
+  background-color: var(--bg-color-2);
   height: 100vh;
 }
 
