@@ -129,13 +129,6 @@ header {
   margin-left: 32px;
 }
 
-a#liHome {
-  padding: 10px;
-  background-color: var(--bg-color-dark);
-  color: var(--color-orange-light);
-  border-radius: 15px;
-}
-
 .mobile-menu {
   display: none;
   cursor: pointer;

@@ -42,3 +42,7 @@ const mobileNavbar = new MobileNavbar(
   ".nav-list li",
 );
 mobileNavbar.init();
+
+function click_nav(){
+  console.log("clicou")
+}
