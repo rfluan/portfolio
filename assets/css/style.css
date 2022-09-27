@@ -215,6 +215,7 @@ div.box {
   font-size: 1.5em;
   font-family: var(--text-u);
   margin-right: 20px;
+  line-height: 25px;
 }
 
 .text-about h1 {
@@ -260,12 +261,21 @@ div.box {
   background-color: #fff;
 }
 
+.card-content {
+  height: 180px;
+  justify-content: space-between;
+}
+
 .image-content,
 .card-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px 14px;
+}
+
+.card-content p {
+  text-align: justify;
 }
 
 .image-content {
