@@ -202,7 +202,7 @@ div.box {
   display: flex;
   align-items: center;
   background-color: var(--bg-color-dark);
-  width: 80vw;
+  width: 60vw;
   height: 50vh;
   margin: auto;
   border-radius: 50px;
@@ -331,7 +331,7 @@ div.box {
 }
 
 .description {
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 .button {
@@ -396,7 +396,7 @@ div.box {
   justify-content: center;
   box-sizing: border-box;
   background-color: var(--bg-color-dark);
-  width: 80vw;
+  width: 60vw;
   height: 50vh;
   margin: auto;
   border-radius: 50px;
@@ -406,6 +406,7 @@ div.box {
 .contact p {
   font-size: 1rem;
   color: white;
+  line-height: 20px;
 }
 
 .contact h1 {
@@ -521,6 +522,7 @@ div.box {
     flex-direction: column;
     justify-content: space-around;
     height: 90vh;
+    width: 90vw;
     padding: 0;
   }
 
@@ -545,8 +547,14 @@ div.box {
     display: none;
   }
 
+  #div-contact {
+    height: 50vh;
+    width: 90vw;
+  }
+
   .contact p {
     font-size: max(15px, 2vw);
+    text-align: justify;
   }
   
   .contact h1 {
