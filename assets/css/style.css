@@ -95,7 +95,6 @@ header {
   align-items: center;
   justify-content: space-around;
   z-index: 9;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .logo a {
@@ -116,7 +115,6 @@ header {
   min-width: 70vw;
   right: 0;
   z-index: 9;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .nav-list {
@@ -376,8 +374,55 @@ div.box {
 .contact {
   background-color: var(--bg-color-2);
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+#div-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: var(--bg-color-dark);
+  width: 80vw;
+  height: 50vh;
+  margin: auto;
+  border-radius: 50px;
+  padding: 50px;
+}
+
+.contact p {
+  font-size: 1rem;
+  color: white;
+}
+
+.contact h1 {
+  color: white;
+  text-align: justify;
+  font-size: 3rem;
+  font-family: var(--text-u);
+  margin: 20px 0px;
+}
+
+.contact a {
+  color: var(--bg-color);
+  background-color: white;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  padding: 5px;
+  border: 3px solid white;
+  border-radius: 8px;
+
+  transition: 400ms;
+}
+
+.contact a:hover {
+  background-color: var(--bg-color);
+  color: white;
+  opacity: 1;
+}
 
 @media screen and (max-width: 768px) {
 
@@ -488,6 +533,18 @@ div.box {
 
   .swiper-navBtn {
     display: none;
+  }
+
+  .contact p {
+    font-size: max(15px, 2vw);
+  }
+  
+  .contact h1 {
+    font-size: max(20px, 2vw);
+  }
+  
+  .contact a {
+    font-size: max(15px, 2vw);
   }
 
 }
