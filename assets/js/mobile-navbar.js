@@ -44,5 +44,5 @@ const mobileNavbar = new MobileNavbar(
 mobileNavbar.init();
 
 function click_nav(){
-  console.log("clicou")
+  mobileNavbar.handleClick()
 }
