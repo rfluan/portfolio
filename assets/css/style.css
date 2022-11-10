@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100&family=Satisfy&family=Ubuntu:wght@300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700&family=Roboto:wght@400;500;700&family=Satisfy&display=swap');
 
 * {
   margin: 0px;
@@ -12,8 +11,8 @@
 }
 
 :root {
-  --text-u:'Ubuntu Mono', sans-serif;
-  --text-s:'Satisfy';
+  --text-u:'Roboto', sans-serif;
+  --text-s:'Satisfy', cursive;
   --text-c:'Catamaran', sans-serif;
 
   --bg-color: #121315;
@@ -30,6 +29,7 @@ body {
   font-family: var(--text-u);
   font-size: 62.5%;
   position: relative;
+  -webkit-font-smoothing: antialiased;
 }
 
 p {
@@ -317,7 +317,7 @@ div.box {
 }
 
 .card-content p {
-  text-align: justify;
+  text-align: center;
   line-height: 110%;
   font-family: var(--text-u);
   font-weight: 400;
@@ -386,7 +386,7 @@ div.box {
   padding: 8px 16px;
   background-color: var(--bg-color-2);
   border-radius: 6px;
-  margin: 14px;
+  margin-top: 14px;
   cursor: pointer;
   transition: 0.3s ease
 }
