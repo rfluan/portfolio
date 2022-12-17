@@ -469,7 +469,6 @@ div.box {
 .contact a {
   color: var(--bg-color);
   background-color: var(--color-white);
-  margin-top: 20px;
   font-size: 1.5rem;
   padding: 5px;
   border: 3px solid var(--color-white);
@@ -482,6 +481,13 @@ div.box {
   background-color: var(--bg-color-2);
   color: var(--color-white);
   opacity: 1;
+}
+
+#buttons-contact {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  margin: 20px 10px;
 }
 
 @media screen and (max-width: 1540px) {
